@@ -2,9 +2,9 @@ function ClickCounterGame(){
     let count =0;
     
     let button1=document.createElement("button");
-    button1.textContent="クリック1";
+    button1.textContent="+1";
     let button2=document.createElement("button");
-    button2.textContent="クリック2";
+    button2.textContent="+10";
     
     let counter =document.createElement("p");
     counter.textContent = count;
