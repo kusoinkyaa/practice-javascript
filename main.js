@@ -75,7 +75,14 @@ function ClickCounterGame(){
         }else if (randomNumber  > val){
             message.textContent = "小さいね"
         }
+        count++;
+        countDisplay.tectContent = `試行回数 : ${count}`;
     })
- gameCountainer.appendChild(button);
+    gameCountainer.appendChild(button);
+
+    let count = 0;
+    const countDisplay = document.createElement("p")
+    countDisplay.tectContent = `試行回数 : ${count}`;
+    gameCountainer.appendChild(countDisplay);
 }
  startNumberGuessgame();
