@@ -1,3 +1,20 @@
+const gameSelector = document.getElementById('game-select');
+const gameCountainer = document.getElementById('game-container');
+gameSelector.addEventListener('change',function() {
+    gameCountainer.innerHTML = '';
+    switch (gameSelector.value){
+        case 'number-guess':
+            startNumberGuessgame();
+            break;
+            case 'clicker':
+                ClickCounterGame();
+                break;
+    }
+});
+
+
+
+
 function ClickCounterGame(){
     let count = 0;
     const gameCountainer = document.getElementById("game-container");
