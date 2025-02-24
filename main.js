@@ -37,7 +37,7 @@ function ClickCounterGame(){
     const gameCountainer = document.getElementById("game-container");
  
     let button1 = document.createElement("button");
-     button1.textContent = "+1ボタン";
+     button1.textContent = "+1ボタん";
 
      let button2 = document.createElement("button");
      button2.textContent = "+10ボタン";
